@@ -1151,3 +1151,256 @@ section {
     transform: none;
   }
 }
+
+/* ============================================================
+   Transparency & Accountability / compliance components
+   ============================================================ */
+.trust-intro {
+  max-width: 720px;
+}
+.trust-intro blockquote {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-style: italic;
+  color: var(--color-text);
+  margin-bottom: var(--space-5);
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  margin-top: var(--space-12);
+}
+.trust-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-8);
+}
+.trust-card dt {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-coral);
+  font-weight: 600;
+}
+[data-theme='dark'] .trust-card dt {
+  color: var(--color-gold);
+}
+.trust-card dd {
+  margin-top: var(--space-3);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  font-family: var(--font-display);
+  color: var(--color-text);
+}
+.trust-card dd span {
+  display: block;
+  margin-top: var(--space-1);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  font-family: var(--font-body);
+  color: var(--color-text-muted);
+}
+@media (max-width: 900px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.disclosure-card {
+  margin-top: var(--space-12);
+  background: var(--color-surface-offset);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  display: grid;
+  gap: var(--space-4);
+}
+.disclosure-card p {
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--color-text);
+  letter-spacing: 0.01em;
+}
+.disclosure-card strong {
+  color: var(--color-primary);
+}
+
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  margin-top: var(--space-12);
+}
+.doc-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.doc-card svg {
+  width: 26px;
+  height: 26px;
+  color: var(--color-text-faint);
+}
+.doc-card h4 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  font-family: var(--font-body);
+}
+.doc-status {
+  align-self: flex-start;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius-full);
+  background: var(--color-surface-offset);
+  color: var(--color-text-faint);
+}
+@media (max-width: 900px) {
+  .doc-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .doc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trust-statements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+.trust-statement {
+  padding-left: var(--space-6);
+  border-left: 3px solid var(--color-coral);
+}
+[data-theme='dark'] .trust-statement {
+  border-left-color: var(--color-gold);
+}
+.trust-statement p {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-style: italic;
+  color: var(--color-text);
+}
+@media (max-width: 700px) {
+  .trust-statements {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gift-id-card {
+  margin-top: var(--space-8);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-8);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+.gift-id-card svg {
+  width: 28px;
+  height: 28px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+.gift-id-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+.gift-id-card strong {
+  color: var(--color-text);
+}
+
+/* ---------- Footer legal / compliance ---------- */
+.footer-legal {
+  border-top: 1px solid color-mix(in oklab, var(--color-on-brand) 15%, transparent);
+  padding-block: var(--space-6);
+  display: grid;
+  gap: var(--space-4);
+}
+.footer-legal-links {
+  display: flex;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+.footer-legal-links a {
+  color: color-mix(in oklab, var(--color-on-brand) 85%, transparent);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.footer-legal-links a:hover {
+  color: var(--color-gold);
+}
+.footer-disclosure {
+  font-size: var(--text-xs);
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: color-mix(in oklab, var(--color-on-brand) 82%, transparent);
+  max-width: 96ch;
+}
+.footer-disclosure a {
+  color: color-mix(in oklab, var(--color-on-brand) 82%, transparent);
+  text-decoration: underline;
+}
+.footer-nonprofit-info {
+  display: grid;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: color-mix(in oklab, var(--color-on-brand) 82%, transparent);
+}
+.footer-nonprofit-info strong {
+  color: var(--color-on-brand);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+/* ---------- Legal / policy prose pages ---------- */
+.legal-content {
+  margin-top: var(--space-10);
+}
+.legal-content h2 {
+  font-size: var(--text-xl);
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-4);
+}
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+.legal-content p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+  line-height: 1.75;
+}
+.legal-content ul {
+  margin: var(--space-4) 0 var(--space-6) var(--space-6);
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+.legal-content li {
+  margin-bottom: var(--space-2);
+}
+.legal-content .legal-updated {
+  font-size: var(--text-sm);
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-8);
+}
