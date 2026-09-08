@@ -4,6 +4,18 @@
    warm sunlit gold, soft terracotta, clean cream, leaf green.
    ============================================================ */
 
+:root {
+  /* Fixed brand-teal tokens — used for decorative dark bands (hero,
+     footer, CTA/quote/video bands, interior page heroes) that keep the
+     same deep-teal-with-light-text look in BOTH themes, independent of
+     the theme-adaptive --color-primary / --color-text-inverse tokens
+     below (which intentionally flip for readability on ordinary page
+     surfaces). Do not redefine these inside a [data-theme] block. */
+  --color-brand-deep: #0e474a;
+  --color-brand-deep-active: #072526;
+  --color-on-brand: #fbf6ec;
+}
+
 :root,
 [data-theme='light'] {
   /* Surfaces */

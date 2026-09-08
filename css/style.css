@@ -82,12 +82,12 @@ section {
 }
 .btn--ghost {
   background: transparent;
-  color: var(--color-text-inverse);
-  border: 1.5px solid color-mix(in oklab, var(--color-text-inverse) 45%, transparent);
+  color: var(--color-on-brand);
+  border: 1.5px solid color-mix(in oklab, var(--color-on-brand) 45%, transparent);
 }
 .btn--ghost:hover {
-  border-color: var(--color-text-inverse);
-  background: color-mix(in oklab, var(--color-text-inverse) 12%, transparent);
+  border-color: var(--color-on-brand);
+  background: color-mix(in oklab, var(--color-on-brand) 12%, transparent);
 }
 .btn--outline {
   background: transparent;
@@ -253,8 +253,8 @@ section {
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-active) 100%);
-  color: var(--color-text-inverse);
+  background: linear-gradient(180deg, var(--color-brand-deep) 0%, var(--color-brand-deep-active) 100%);
+  color: var(--color-on-brand);
   overflow: hidden;
   padding-top: clamp(var(--space-16), 8vw, var(--space-24));
   padding-bottom: clamp(var(--space-20), 10vw, var(--space-32));
@@ -291,7 +291,7 @@ section {
 }
 .hero-sub {
   font-size: var(--text-lg);
-  color: color-mix(in oklab, var(--color-text-inverse) 82%, transparent);
+  color: color-mix(in oklab, var(--color-on-brand) 82%, transparent);
   max-width: 42ch;
   margin-top: var(--space-6);
 }
@@ -304,10 +304,10 @@ section {
 .hero-note {
   margin-top: var(--space-10);
   padding-top: var(--space-6);
-  border-top: 1px solid color-mix(in oklab, var(--color-text-inverse) 20%, transparent);
+  border-top: 1px solid color-mix(in oklab, var(--color-on-brand) 20%, transparent);
   font-size: var(--text-sm);
   font-style: italic;
-  color: color-mix(in oklab, var(--color-text-inverse) 72%, transparent);
+  color: color-mix(in oklab, var(--color-on-brand) 72%, transparent);
   max-width: 44ch;
 }
 
@@ -319,7 +319,7 @@ section {
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  border: 1px solid color-mix(in oklab, var(--color-text-inverse) 18%, transparent);
+  border: 1px solid color-mix(in oklab, var(--color-on-brand) 18%, transparent);
   aspect-ratio: 4 / 5;
 }
 .hero-media-frame img,
@@ -531,8 +531,8 @@ section {
 
 /* ---------- Video feature ---------- */
 .video-feature {
-  background: var(--color-primary);
-  color: var(--color-text-inverse);
+  background: var(--color-brand-deep);
+  color: var(--color-on-brand);
   border-radius: var(--radius-xl);
   padding: clamp(var(--space-10), 6vw, var(--space-16));
   display: grid;
@@ -561,7 +561,7 @@ section {
 }
 .video-feature p {
   margin-top: var(--space-5);
-  color: color-mix(in oklab, var(--color-text-inverse) 85%, transparent);
+  color: color-mix(in oklab, var(--color-on-brand) 85%, transparent);
   position: relative;
 }
 .video-frame {
@@ -572,7 +572,7 @@ section {
   max-width: 320px;
   margin-inline: auto;
   box-shadow: var(--shadow-lg);
-  border: 6px solid color-mix(in oklab, var(--color-text-inverse) 14%, transparent);
+  border: 6px solid color-mix(in oklab, var(--color-on-brand) 14%, transparent);
 }
 .video-frame video {
   width: 100%;
@@ -696,8 +696,8 @@ section {
 
 /* ---------- Donate CTA band ---------- */
 .cta-band {
-  background: linear-gradient(120deg, var(--color-primary) 0%, var(--color-primary-active) 100%);
-  color: var(--color-text-inverse);
+  background: linear-gradient(120deg, var(--color-brand-deep) 0%, var(--color-brand-deep-active) 100%);
+  color: var(--color-on-brand);
   border-radius: var(--radius-xl);
   padding: clamp(var(--space-12), 7vw, var(--space-20));
   text-align: center;
@@ -719,7 +719,7 @@ section {
 .cta-band p {
   position: relative;
   margin-top: var(--space-5);
-  color: color-mix(in oklab, var(--color-text-inverse) 82%, transparent);
+  color: color-mix(in oklab, var(--color-on-brand) 82%, transparent);
   max-width: 52ch;
   margin-inline: auto;
 }
@@ -1019,11 +1019,8 @@ section {
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: var(--color-primary-active);
-  color: color-mix(in oklab, var(--color-text-inverse) 85%, transparent);
-}
-[data-theme='dark'] .site-footer {
-  background: #0b100d;
+  background: var(--color-brand-deep-active);
+  color: color-mix(in oklab, var(--color-on-brand) 85%, transparent);
 }
 .footer-grid {
   display: grid;
@@ -1035,7 +1032,7 @@ section {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  color: var(--color-text-inverse);
+  color: var(--color-on-brand);
   text-decoration: none;
   margin-bottom: var(--space-4);
 }
@@ -1043,16 +1040,16 @@ section {
   color: var(--color-gold);
 }
 .footer-brand .brand-name {
-  color: var(--color-text-inverse);
+  color: var(--color-on-brand);
 }
 .footer-brand .brand-name small {
-  color: color-mix(in oklab, var(--color-text-inverse) 65%, transparent);
+  color: color-mix(in oklab, var(--color-on-brand) 65%, transparent);
 }
 .footer-col h5 {
   font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: color-mix(in oklab, var(--color-text-inverse) 55%, transparent);
+  color: color-mix(in oklab, var(--color-on-brand) 55%, transparent);
   margin-bottom: var(--space-4);
 }
 .footer-col ul {
@@ -1060,7 +1057,7 @@ section {
   gap: var(--space-3);
 }
 .footer-col a {
-  color: color-mix(in oklab, var(--color-text-inverse) 85%, transparent);
+  color: color-mix(in oklab, var(--color-on-brand) 85%, transparent);
   text-decoration: none;
   font-size: var(--text-sm);
 }
@@ -1068,13 +1065,13 @@ section {
   color: var(--color-gold);
 }
 .footer-bottom {
-  border-top: 1px solid color-mix(in oklab, var(--color-text-inverse) 15%, transparent);
+  border-top: 1px solid color-mix(in oklab, var(--color-on-brand) 15%, transparent);
   padding-block: var(--space-6);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: var(--text-xs);
-  color: color-mix(in oklab, var(--color-text-inverse) 55%, transparent);
+  color: color-mix(in oklab, var(--color-on-brand) 55%, transparent);
   flex-wrap: wrap;
   gap: var(--space-3);
 }
@@ -1091,8 +1088,8 @@ section {
 
 /* ---------- Page hero (interior pages) ---------- */
 .page-hero {
-  background: var(--color-primary);
-  color: var(--color-text-inverse);
+  background: var(--color-brand-deep);
+  color: var(--color-on-brand);
   padding-block: clamp(var(--space-16), 8vw, var(--space-24));
   position: relative;
   overflow: hidden;
@@ -1119,7 +1116,7 @@ section {
   position: relative;
   margin-top: var(--space-5);
   font-size: var(--text-lg);
-  color: color-mix(in oklab, var(--color-text-inverse) 82%, transparent);
+  color: color-mix(in oklab, var(--color-on-brand) 82%, transparent);
   max-width: 52ch;
 }
 
