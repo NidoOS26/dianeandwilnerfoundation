@@ -1,0 +1,146 @@
+/* ============================================================
+   DIANE & WILNER FOUNDATION — DESIGN TOKENS
+   Palette derived from brand strategy: deep hopeful teal,
+   warm sunlit gold, soft terracotta, clean cream, leaf green.
+   ============================================================ */
+
+:root,
+[data-theme='light'] {
+  /* Surfaces */
+  --color-bg: #faf6ee;
+  --color-surface: #ffffff;
+  --color-surface-2: #fffdf9;
+  --color-surface-offset: #f2ecdf;
+  --color-surface-offset-2: #eae1cd;
+  --color-surface-dynamic: #e3d8c0;
+  --color-divider: #e4dac6;
+  --color-border: #d9cbac;
+
+  /* Text */
+  --color-text: #211d16;
+  --color-text-muted: #6b6255;
+  --color-text-faint: #a89c88;
+  --color-text-inverse: #fbf6ec;
+
+  /* Primary accent — Deep Teal */
+  --color-primary: #0e474a;
+  --color-primary-hover: #0a3436;
+  --color-primary-active: #072526;
+  --color-primary-highlight: #d7e4e1;
+
+  /* Gold — warm sunlit gold */
+  --color-gold: #cf9a3e;
+  --color-gold-hover: #b3822f;
+  --color-gold-active: #8f6822;
+  --color-gold-highlight: #f2e3c3;
+
+  /* Terracotta / coral accent */
+  --color-coral: #c1592f;
+  --color-coral-hover: #a3491f;
+  --color-coral-active: #833a17;
+  --color-coral-highlight: #f0d9c8;
+
+  /* Leaf green (supporting accent) */
+  --color-green: #4f7a3f;
+  --color-green-hover: #3d6130;
+  --color-green-highlight: #dde8d3;
+
+  /* Status */
+  --color-success: #4f7a3f;
+  --color-warning: #b3822f;
+  --color-error: #a3491f;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-interactive: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(20, 20, 10, 0.07);
+  --shadow-md: 0 8px 24px rgba(20, 20, 10, 0.1);
+  --shadow-lg: 0 20px 48px rgba(20, 20, 10, 0.16);
+
+  /* Content widths */
+  --content-narrow: 640px;
+  --content-default: 1000px;
+  --content-wide: 1240px;
+  --content-full: 100%;
+
+  /* Fonts */
+  --font-display: 'Zodiak', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+[data-theme='dark'] {
+  --color-bg: #101613;
+  --color-surface: #151b17;
+  --color-surface-2: #182019;
+  --color-surface-offset: #1b231d;
+  --color-surface-offset-2: #212b23;
+  --color-surface-dynamic: #29352c;
+  --color-divider: #263029;
+  --color-border: #37453b;
+
+  --color-text: #eee7d8;
+  --color-text-muted: #a6ab9c;
+  --color-text-faint: #6c7367;
+  --color-text-inverse: #171614;
+
+  --color-primary: #6fb0ac;
+  --color-primary-hover: #8dc4c0;
+  --color-primary-active: #a9d5d1;
+  --color-primary-highlight: #223634;
+
+  --color-gold: #e8b757;
+  --color-gold-hover: #f0c877;
+  --color-gold-active: #f6da9e;
+  --color-gold-highlight: #3a3020;
+
+  --color-coral: #e0855a;
+  --color-coral-hover: #e9a077;
+  --color-coral-active: #f0b899;
+  --color-coral-highlight: #3c2a20;
+
+  --color-green: #8db877;
+  --color-green-hover: #a5cb90;
+  --color-green-highlight: #263021;
+
+  --color-success: #8db877;
+  --color-warning: #e8b757;
+  --color-error: #e0855a;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.5);
+}
+
+/* Type scale */
+:root {
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+  --text-3xl: clamp(2.5rem, 1rem + 4vw, 4.75rem);
+  --text-hero: clamp(2.75rem, 0.75rem + 5.5vw, 6.5rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+}
