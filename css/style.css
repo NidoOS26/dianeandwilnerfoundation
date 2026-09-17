@@ -1404,3 +1404,16 @@ section {
   color: var(--color-text-faint);
   margin-bottom: var(--space-8);
 }
+
+/* Verified-source variant for document library cards */
+.doc-status--verify {
+  background: var(--color-primary-highlight);
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: background var(--transition-interactive);
+}
+.doc-status--verify:hover {
+  background: var(--color-gold-highlight);
+  color: var(--color-gold-active);
+}
+.doc-card--tall { justify-content: space-between; }
