@@ -1417,3 +1417,4 @@ section {
   color: var(--color-gold-active);
 }
 .doc-card--tall { justify-content: space-between; }
+.nowrap { white-space: nowrap; }
