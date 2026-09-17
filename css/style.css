@@ -1418,3 +1418,9 @@ section {
 }
 .doc-card--tall { justify-content: space-between; }
 .nowrap { white-space: nowrap; }
+.doc-status--verify::after {
+  content: "\2197";
+  margin-left: 0.35em;
+  font-size: 1.05em;
+  line-height: 1;
+}
