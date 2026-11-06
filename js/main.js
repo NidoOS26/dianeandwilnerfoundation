@@ -117,17 +117,25 @@
     });
   }
 
-  /* Contact form — friendly demo submit (no backend configured yet) */
+  /* Contact form — compose an email instead of claiming an unsent message was received. */
   var form = document.querySelector('[data-contact-form]');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (!form.reportValidity()) return;
+      var name = form.querySelector('[name="name"]').value.trim();
+      var sender = form.querySelector('[name="email"]').value.trim();
+      var reason = form.querySelector('[name="reason"]').value;
+      var message = form.querySelector('[name="message"]').value.trim();
+      var subject = 'Diane & Wilner Foundation inquiry: ' + reason;
+      var body = 'Name: ' + name + '\nEmail: ' + sender + '\nInterest: ' + reason + '\n\n' + message;
+      var link = 'mailto:info@dianeandwilnerfoundation.org?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       var status = form.querySelector('[data-form-status]');
       if (status) {
-        status.textContent = 'Thank you — your message has been noted. We will reach out soon.';
+        status.textContent = 'Your email app should open with your message. Please press Send there to deliver it. If nothing opens, email info@dianeandwilnerfoundation.org directly.';
         status.hidden = false;
       }
-      form.reset();
+      window.location.href = link;
     });
   }
 
