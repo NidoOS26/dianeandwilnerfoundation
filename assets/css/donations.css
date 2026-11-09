@@ -1,0 +1,18 @@
+.amounts a {
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  color: var(--ink);
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: center;
+  padding: .65rem 1.1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.amounts a:hover,
+.amounts a:focus-visible {
+  background: var(--coral);
+}

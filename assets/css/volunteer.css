@@ -1,0 +1,27 @@
+.volunteer-hero{padding:clamp(4rem,8vw,7rem) 0;background:var(--forest);color:var(--ivory)}
+.volunteer-hero h1{max-width:12ch;margin-bottom:1.5rem}
+.volunteer-hero h1 em,.volunteer-hero .eyebrow{color:var(--gold)}
+.volunteer-intro{max-width:49ch;font-size:1.2rem;color:var(--ivory);margin-bottom:2rem}
+.volunteer-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,6vw,5rem);padding-block:clamp(3rem,7vw,6rem);align-items:start}
+.volunteer-copy h2{max-width:12ch}
+.volunteer-ways{margin-block:2rem}
+.volunteer-ways article{padding:1.5rem 0;border-top:1px solid var(--sage)}
+.volunteer-ways h3{margin-bottom:.6rem}
+.volunteer-ways p{margin:0}
+.volunteer-note,.volunteer-field small{font-size:.85rem;line-height:1.6}
+.volunteer-panel{background:#fffdf8;padding:clamp(1.25rem,3vw,2.5rem);border-top:4px solid var(--gold);scroll-margin-top:7rem}
+.volunteer-panel h2{font-size:clamp(2rem,4vw,3.2rem);max-width:14ch}
+.volunteer-panel form{display:grid;gap:1.5rem}
+.volunteer-field{display:grid;gap:.45rem}
+.volunteer-field label,.volunteer-panel legend{font-weight:700;font-size:.92rem}
+.volunteer-field input,.volunteer-field textarea{width:100%;min-width:0;padding:.8rem;border:1px solid var(--forest);border-radius:2px;background:#fff;color:var(--ink);font:inherit}
+.volunteer-field textarea{resize:vertical}
+.volunteer-panel fieldset{margin:0;padding:1rem;border:1px solid var(--sage);min-width:0}
+.volunteer-choice{display:flex;align-items:flex-start;gap:.65rem;font-size:.92rem;cursor:pointer}
+.volunteer-panel fieldset .volunteer-choice+.volunteer-choice{margin-top:.7rem}
+.volunteer-choice input{flex-shrink:0;margin-top:.35rem;accent-color:var(--forest);width:1.1rem;height:1.1rem}
+.volunteer-panel .button{justify-content:center}
+.volunteer-panel .button:hover,.volunteer-hero .button:hover{background:var(--gold);color:var(--ink)}
+.volunteer-thanks{min-height:65vh}
+.volunteer-thanks h1{max-width:15ch}
+@media(max-width:760px){.volunteer-layout{grid-template-columns:1fr}.volunteer-hero h1{font-size:clamp(3rem,12vw,4.5rem)}.ref-header .site-nav{background:var(--ink)}}

@@ -1,0 +1,44 @@
+#story .story-wrap {
+  display: flow-root;
+}
+
+#story .story-photo {
+  float: left;
+  width: 42%;
+  margin: 0 clamp(1.5rem,4vw,3rem) 1.5rem 0;
+}
+
+#story .story-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#story .story-photo figcaption {
+  display: block;
+  line-height: 1.5;
+}
+
+#story h2 {
+  max-width: none;
+  font-size: clamp(2.4rem,4vw,3.6rem);
+  margin-bottom: 1.5rem;
+}
+
+#story .story-wrap > p:not(.eyebrow) {
+  font-size: 1.12rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+#story .story-wrap > p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  #story .story-photo {
+    float: none;
+    width: 100%;
+    margin: 0 0 2rem;
+  }
+}

@@ -1,0 +1,5 @@
+.volunteer-field select{width:100%;min-width:0;padding:.8rem;border:1px solid var(--forest);border-radius:2px;background:#fff;color:var(--ink);font:inherit}
+.referral-share{margin-top:2.5rem;padding:1.5rem;border-top:4px solid var(--gold);background:#ecdfc9}
+.referral-share .actions{gap:.75rem;margin-block:1.5rem}
+.referral-site-link{overflow-wrap:anywhere;font-size:.9rem;text-underline-offset:.2em}
+.referral-share .button:hover{background:var(--gold);color:var(--ink)}
