@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Referrals | Diane &amp; Wilner Foundation</title>
+  <meta name="description" content="Refer a volunteer, community partner, resource, or someone seeking support to the Diane and Wilner Foundation. Share our website by email or text.">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="stylesheet" href="assets/css/volunteer.css">
+  <link rel="stylesheet" href="assets/css/referral.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header ref-header"><div class="shell header-inner">
+    <a class='logo-link' href='/'><img class="logo-image" src="assets/images/diane-wilner-foundation-logo.png" alt="Diane and Wilner Foundation"></a>
+    <button class="menu-toggle" data-menu-button aria-controls="main-navigation" aria-expanded="false">Menu</button>
+    <nav data-site-nav id="main-navigation" class="site-nav"><a href='/#story'>Our story</a><a href='/#programs'>Programs</a><a href='/#transparency'>Transparency</a><a href='/volunteer'>Volunteer</a><a aria-current='page' href='/referral'>Referrals</a><a class='nav-support' href='/donate'>Give today</a></nav>
+  </div></header>
+  <main id="main-content" tabindex="-1">
+    <section class="volunteer-hero"><div class="shell">
+      <p class="eyebrow">Make a connection</p>
+      <h1>Care grows<br>through <em>community.</em></h1>
+      <p class="volunteer-intro">Connect the Foundation with someone who wants to help, an organization with a shared mission, a useful resource, or someone seeking support.</p>
+      <a class="button button-primary" href="#referral-form">Make a referral</a>
+    </div></section>
+    <section class="shell volunteer-layout" aria-labelledby="referral-heading">
+      <div class="volunteer-copy">
+        <p class="eyebrow">Open the next door</p>
+        <h2 id="referral-heading">A thoughtful introduction.</h2>
+        <div class="volunteer-ways">
+          <article><h3>Volunteers</h3><p>Know someone who wants to share their time or skills? Introduce them, or share our <a href='/volunteer'>volunteer page</a> so they can express interest themselves.</p></article>
+          <article><h3>Community partners</h3><p>Suggest a school, business, community group, or nonprofit interested in supporting children and families.</p></article>
+          <article><h3>Resources &amp; services</h3><p>Recommend an organization or public resource related to education, healthcare, housing, or family support. Include a public website if available.</p></article>
+          <article><h3>People seeking support</h3><p>With their permission, introduce an adult or a parent or guardian seeking support for their family. Do not submit a child’s personal details.</p></article>
+        </div>
+        <p class="volunteer-note">A referral does not guarantee assistance, a volunteer placement, a partnership, or endorsement of a resource. This form is not monitored for emergencies. For urgent help, contact local emergency services.</p>
+        <aside class="referral-share" aria-labelledby="share-heading">
+          <p class="eyebrow">Pass it on</p>
+          <h3 id="share-heading">Send our website.</h3>
+          <p>A simple way to introduce someone to the Foundation, without sharing their details here.</p>
+          <div class="actions">
+            <a class="button button-primary" href="mailto:?subject=Diane%20%26%20Wilner%20Foundation&amp;body=Learn%20about%20the%20Diane%20%26%20Wilner%20Foundation%20and%20ways%20to%20get%20involved%3A%20https%3A%2F%2Fdianeandwilnerfoundation.org%2F">Share by email</a>
+            <a class="button button-primary" data-share-text href="sms:?body=Learn%20about%20the%20Diane%20%26%20Wilner%20Foundation%20and%20ways%20to%20get%20involved%3A%20https%3A%2F%2Fdianeandwilnerfoundation.org%2F">Share by text</a>
+          </div>
+          <p class="volunteer-note">These buttons open your email or messaging app with a draft. Choose a recipient and send it yourself. If your device has no compatible app, copy this link:</p>
+          <a class="referral-site-link" href="https://dianeandwilnerfoundation.org/">https://dianeandwilnerfoundation.org/</a>
+        </aside>
+      </div>
+      <div id="referral-form" class="volunteer-panel">
+        <p class="eyebrow">Start a conversation</p>
+        <h2>Share your referral.</h2>
+        <p id="referral-guidance">Fields marked with * are required. Submit one referral at a time.</p>
+        <form data-netlify="true" netlify-honeypot="bot-field" action='/referral-thank-you' aria-describedby='referral-guidance referral-privacy' method='POST' name='referral'>
+          <input type="hidden" name="form-name" value="referral">
+          <p hidden><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="volunteer-field"><label for="referrer-name">Your full name *</label><input id="referrer-name" name="name" autocomplete="name" maxlength="150" required></div>
+          <div class="volunteer-field"><label for="referrer-email">Your email address *</label><input id="referrer-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+          <div class="volunteer-field"><label for="referral-type">Referral type *</label><select id="referral-type" name="referral-type" required><option value="">Choose a referral type</option><option value="Volunteer">Volunteer</option><option value="Community partner">Community partner</option><option value="Resource or service">Resource or service</option><option value="Person or family seeking support">Person or family seeking support</option></select></div>
+          <div class="volunteer-field"><label for="referral-name">Adult contact, organization, or resource name *</label><input id="referral-name" name="referral-name" maxlength="150" required></div>
+          <div class="volunteer-field"><label for="referral-contact">Referral contact email (optional)</label><input id="referral-contact" name="referral-email" type="email" maxlength="254" aria-describedby="referral-contact-hint"><small id="referral-contact-hint">Only include someone else’s email with their permission. You can leave it blank and coordinate an introduction yourself.</small></div>
+          <div class="volunteer-field"><label for="referral-website">Public website (optional)</label><input id="referral-website" name="website" type="url" placeholder="https://" maxlength="500"></div>
+          <div class="volunteer-field"><label for="referral-location">City and country (optional)</label><input id="referral-location" name="location" maxlength="150"></div>
+          <div class="volunteer-field"><label for="referral-details">How could this connection help? *</label><textarea id="referral-details" name="details" rows="5" maxlength="3000" aria-describedby="referral-privacy" required></textarea></div>
+          <p id="referral-privacy" class="volunteer-note">Keep your description general. Do not include children’s names, medical information, financial details, home addresses, or identification documents.</p>
+          <label class="volunteer-choice"><input name="permission" type="checkbox" value="confirmed" required><span>I have permission to share any personal contact details included here. For a public organization or resource, I am sharing publicly available information. *</span></label>
+          <label class="volunteer-choice"><input name="contact-consent" type="checkbox" value="yes" required><span>I agree to be contacted by the Foundation about this referral. *</span></label>
+          <button class="button button-primary" type="submit">Send referral</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><p>Diane &amp; Wilner Foundation</p><p>Stronger homes. Brighter futures.</p><a href='/volunteer'>Share your time and skills</a></div></footer>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/referral.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Volunteer | Diane &amp; Wilner Foundation</title>
+  <meta name="description" content="Share your time and skills with the Diane and Wilner Foundation. Express your interest in helping children and families in Haiti and the U.S.">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="stylesheet" href="assets/css/volunteer.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header ref-header"><div class="shell header-inner">
+    <a class='logo-link' href='/'><img class="logo-image" src="assets/images/diane-wilner-foundation-logo.png" alt="Diane and Wilner Foundation"></a>
+    <button class="menu-toggle" data-menu-button aria-controls="main-navigation" aria-expanded="false">Menu</button>
+    <nav data-site-nav id="main-navigation" class="site-nav"><a href='/#story'>Our story</a><a href='/#programs'>Programs</a><a href='/#transparency'>Transparency</a><a aria-current='page' href='/volunteer'>Volunteer</a><a href='/referral'>Referrals</a><a class='nav-support' href='/donate'>Give today</a></nav>
+  </div></header>
+  <main id="main-content" tabindex="-1">
+    <section class="volunteer-hero"><div class="shell">
+      <p class="eyebrow">Give your time · Share your skills</p>
+      <h1>Small acts.<br>Lasting <em>care.</em></h1>
+      <p class="volunteer-intro">Help carry Diane’s legacy forward. Your time and skills can support the work of building stronger futures for children and families in Haiti and the U.S.</p>
+      <a class="button button-primary" href="#volunteer-interest">Express your interest</a>
+    </div></section>
+    <section class="shell volunteer-layout" aria-labelledby="ways-heading">
+      <div class="volunteer-copy">
+        <p class="eyebrow">A place to start</p>
+        <h2 id="ways-heading">Many ways to lend a hand.</h2>
+        <p>Tell us what you enjoy and how you’d like to help. These are areas you can express interest in, not a list of confirmed openings.</p>
+        <div class="volunteer-ways">
+          <article><h3>Backpacks &amp; supplies</h3><p>Help with collecting, organizing, and preparing school supplies or in-kind contributions.</p></article>
+          <article><h3>Community outreach</h3><p>Share the Foundation’s mission and support community awareness or fundraising efforts.</p></article>
+          <article><h3>Your skills, shared</h3><p>Express interest in communications, administration, education, or another skill you can contribute.</p></article>
+        </div>
+        <p class="volunteer-note">Submitting this form is an expression of interest, not a confirmed volunteer placement. Activities depend on current needs and any requirements for the role.</p>
+      </div>
+      <div id="volunteer-interest" class="volunteer-panel">
+        <p class="eyebrow">Let’s connect</p>
+        <h2>Tell us about yourself.</h2>
+        <p id="form-guidance">Fields marked with * are required.</p>
+        <form data-netlify="true" netlify-honeypot="bot-field" action='/volunteer-thank-you' aria-describedby='form-guidance' method='POST' name='volunteer-interest'>
+          <input type="hidden" name="form-name" value="volunteer-interest">
+          <p hidden><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="volunteer-field"><label for="volunteer-name">Full name *</label><input id="volunteer-name" name="name" autocomplete="name" maxlength="150" required></div>
+          <div class="volunteer-field"><label for="volunteer-email">Email address *</label><input id="volunteer-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+          <div class="volunteer-field"><label for="volunteer-phone">Phone number (optional)</label><input id="volunteer-phone" name="phone" type="tel" autocomplete="tel" maxlength="50"></div>
+          <div class="volunteer-field"><label for="volunteer-location">City and country *</label><input id="volunteer-location" name="location" maxlength="150" required></div>
+          <fieldset><legend>What interests you? (optional)</legend>
+            <label class="volunteer-choice"><input type="checkbox" name="interests[]" value="Backpacks and supplies"> Backpacks and supplies</label>
+            <label class="volunteer-choice"><input type="checkbox" name="interests[]" value="Outreach and fundraising"> Outreach and fundraising</label>
+            <label class="volunteer-choice"><input type="checkbox" name="interests[]" value="Communications and administration"> Communications and administration</label>
+            <label class="volunteer-choice"><input type="checkbox" name="interests[]" value="Other or open to suggestions"> Other / open to suggestions</label>
+          </fieldset>
+          <div class="volunteer-field"><label for="volunteer-availability">Availability *</label><textarea id="volunteer-availability" name="availability" rows="3" maxlength="2000" aria-describedby="availability-hint" required></textarea><small id="availability-hint">Share the days, times, or frequency that work for you, and whether you prefer remote or in-person help.</small></div>
+          <div class="volunteer-field"><label for="volunteer-skills">Skills or anything else to share (optional)</label><textarea id="volunteer-skills" name="skills" rows="4" maxlength="3000"></textarea></div>
+          <p class="volunteer-note">Please don’t include sensitive personal information, medical details, or identification documents.</p>
+          <label class="volunteer-choice"><input type="checkbox" name="contact-consent" value="yes" required> <span>I agree to be contacted by the Foundation about my volunteer interest. *</span></label>
+          <button class="button button-primary" type="submit">Send volunteer interest</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><p>Diane &amp; Wilner Foundation</p><p>Stronger homes. Brighter futures.</p><a href='/donate'>Donate or give in kind</a></div></footer>
+  <script src="assets/js/site.js" defer></script>
+
+</body>
+</html>
