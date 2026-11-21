@@ -1,21 +1,35 @@
+.video-hero {
+  isolation: isolate;
+}
+
+.video-hero video {
+  z-index: 0;
+}
+
 .video-shade {
-  background:
-    linear-gradient(90deg,
-      rgba(8,27,25,.98) 0%,
-      rgba(8,35,32,.95) 38%,
-      rgba(7,55,52,.82) 62%,
-      rgba(13,23,21,.38) 100%),
-    linear-gradient(180deg, rgba(13,23,21,.22), rgba(13,23,21,.08));
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(90deg,
+    rgb(8 27 25 / 70%) 0%,
+    rgb(8 27 25 / 62%) 45%,
+    rgb(8 27 25 / 18%) 100%);
+}
+
+.hero-content {
+  z-index: 2;
 }
 
 .hero-content h1,
 .hero-content .eyebrow,
 .hero-content > p {
-  text-shadow: 0 2px 18px rgba(0,0,0,.42);
+  text-shadow: 0 2px 12px rgb(0 0 0 / 75%);
 }
 
-@media (max-width:760px) {
+@media (max-width: 760px) {
   .video-shade {
-    background: linear-gradient(90deg, rgba(8,27,25,.98), rgba(8,35,32,.88));
+    background: linear-gradient(0deg,
+      rgb(8 27 25 / 65%) 0%,
+      rgb(8 27 25 / 56%) 65%,
+      rgb(8 27 25 / 22%) 100%);
   }
 }
